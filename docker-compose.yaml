@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+
+  #  Change "service_name" and the VIRTUAL_HOST with the corresponding name (eg. platform-auth)
+  service_name:
+    build: .
+    ports:
+      - 8080
+    volumes:
+      - ./:/src/
+    environment:
+      VIRTUAL_HOST: service_name.local-reptrak.io
+
+networks:
+  default:
+    external:
+      name: reptrak-net

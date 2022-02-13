@@ -1,0 +1,9 @@
+ddtrace==0.53.2
+fastapi==0.65.2
+flake8==3.8.4
+gunicorn==20.1.0
+httptools==0.1.2
+pre-commit==2.12.1
+pytest==6.2.5
+uvicorn==0.13.4
+uvloop==0.16.0
